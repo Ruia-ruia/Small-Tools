@@ -2,8 +2,8 @@ num, base = input('Enter number and base: ').split(', ')
 
 num = int(num)
 base = int(base)
-
 retList = []
+
 if base <= 16:
         while True:
                 if num <= 0:
