@@ -6,7 +6,7 @@ base = int(base)
 retList = []
 if base <= 16:
         while True:
-                if not (num > 0):
+                if num <= 0:
                         break
                 else:
                         rem = num % base
