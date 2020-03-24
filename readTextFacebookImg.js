@@ -1,12 +1,17 @@
 /*
-1. Left-click image. It should now be enlarged on the screen.
-2. Right-click in the browser and select 'inspect element' and then go to the second tab which reads 'Console'.
-3. Alternatively, use 'Command + Option + I' and it should go to the 'Console' tab automatically. 
-   This option is for Mac OSX.
-4. Input the JavaScript code exactly it is appears, into the 'Console' which comes up:
+Creating a google chrome extension. 
 
-5. Press enter and the text which is in the image should be appended to the 
-end of a few words saying 'Possible text contained in image'.
+Will either go with the creation of a dual-facebook which opens in another tab and collects
+the alt part of all img tags on facebook. Otherwise I will change the actual tags to <p>
+and inline the alt to replace the images altogether. Perhaps these can be options on the 
+extension. 
 */
 
-document.getElementsByClassName('spotlight')[0].alt
+var imgCollect = document.getElementsByTagName('img');
+var altToClass = {};
+
+for (let img of imgCollect) {
+    altToClass[img.alt] = img.className;
+}
+
+console.log(altToClass);
