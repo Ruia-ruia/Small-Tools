@@ -10,5 +10,5 @@ extension.
 var imgCollect = document.getElementsByTagName('img');
 
 for (let img of imgCollect) {
-    img.outerHTML = '<p>' + img.alt + '</p>';
+    img.outerHTML = '<h3>' + img.alt + '</h3>';
 }
