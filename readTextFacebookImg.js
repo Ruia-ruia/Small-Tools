@@ -7,8 +7,12 @@ and inline the alt to replace the images altogether. Perhaps these can be option
 extension. 
 */
 
-var imgCollect = document.getElementsByTagName('img');
-
-for (let img of imgCollect) {
-    img.outerHTML = '<h3>' + img.alt + '</h3>';
+function runTime(){
+  var imgCollect = document.getElementsByTagName('img');
+    
+  for (let img of imgCollect) {
+      img.outerHTML = '<h3>' + img.alt + '</h3>';
+    }
 }
+
+setTimeout(runTime(), 1000);
