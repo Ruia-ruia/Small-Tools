@@ -8,10 +8,7 @@ extension.
 */
 
 var imgCollect = document.getElementsByTagName('img');
-var altToClass = {};
 
 for (let img of imgCollect) {
-    altToClass[img.alt] = img.className;
+    img.outerHTML = '<p>' + img.alt + '</p>';
 }
-
-console.log(altToClass);
