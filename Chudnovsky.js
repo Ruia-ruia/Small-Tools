@@ -1,7 +1,7 @@
 /*
 This is a JS implementation of the Chudonovksy Pi computation formula.
 Don't run it in your browser. Run it with NodeJS in your shell. 
-Ka^Io 
+By Ka^Io 
 */
 
 factorial = function(n){
