@@ -42,8 +42,5 @@ sco.add_teacher("Mr. T")
 print(sco)
 
 g = iter(sco)
-print(next(g))
-print(next(g))
-print(next(g))
-print(next(g))
-print(next(g))
+for i in range(4):
+    print(next(g))
