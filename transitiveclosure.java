@@ -2,7 +2,7 @@ import java.util.Scanner;
 import java.util.List;
 import java.util.ArrayList;
 
-public class War {
+public class Warshall {
 
     // store for loops
     public static ArrayList<Integer> starts = new ArrayList<Integer>(); 
